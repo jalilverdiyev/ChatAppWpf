@@ -1,0 +1,153 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Programming\\Works\\Dotnet\\ChatApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C6C72AF5-5D54-443F-A510-22EE4726841A}|Presentation\\ChatApp.Wpf\\ChatApp.Wpf.csproj|d:\\programming\\works\\dotnet\\chatapp\\presentation\\chatapp.wpf\\views\\chatview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{C6C72AF5-5D54-443F-A510-22EE4726841A}|Presentation\\ChatApp.Wpf\\ChatApp.Wpf.csproj|solutionrelative:presentation\\chatapp.wpf\\views\\chatview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6C72AF5-5D54-443F-A510-22EE4726841A}|Presentation\\ChatApp.Wpf\\ChatApp.Wpf.csproj|d:\\programming\\works\\dotnet\\chatapp\\presentation\\chatapp.wpf\\viewmodels\\chatviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6C72AF5-5D54-443F-A510-22EE4726841A}|Presentation\\ChatApp.Wpf\\ChatApp.Wpf.csproj|solutionrelative:presentation\\chatapp.wpf\\viewmodels\\chatviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6C72AF5-5D54-443F-A510-22EE4726841A}|Presentation\\ChatApp.Wpf\\ChatApp.Wpf.csproj|d:\\programming\\works\\dotnet\\chatapp\\presentation\\chatapp.wpf\\services\\ihubservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6C72AF5-5D54-443F-A510-22EE4726841A}|Presentation\\ChatApp.Wpf\\ChatApp.Wpf.csproj|solutionrelative:presentation\\chatapp.wpf\\services\\ihubservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6C72AF5-5D54-443F-A510-22EE4726841A}|Presentation\\ChatApp.Wpf\\ChatApp.Wpf.csproj|d:\\programming\\works\\dotnet\\chatapp\\presentation\\chatapp.wpf\\views\\chatview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6C72AF5-5D54-443F-A510-22EE4726841A}|Presentation\\ChatApp.Wpf\\ChatApp.Wpf.csproj|solutionrelative:presentation\\chatapp.wpf\\views\\chatview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 322,
+          "SelectedChildIndex": 14,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ChatView.xaml",
+              "DocumentMoniker": "D:\\Programming\\Works\\Dotnet\\ChatApp\\Presentation\\ChatApp.Wpf\\Views\\ChatView.xaml",
+              "RelativeDocumentMoniker": "Presentation\\ChatApp.Wpf\\Views\\ChatView.xaml",
+              "ToolTip": "D:\\Programming\\Works\\Dotnet\\ChatApp\\Presentation\\ChatApp.Wpf\\Views\\ChatView.xaml",
+              "RelativeToolTip": "Presentation\\ChatApp.Wpf\\Views\\ChatView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-02T00:10:59.094Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ChatView.xaml.cs",
+              "DocumentMoniker": "D:\\Programming\\Works\\Dotnet\\ChatApp\\Presentation\\ChatApp.Wpf\\Views\\ChatView.xaml.cs",
+              "RelativeDocumentMoniker": "Presentation\\ChatApp.Wpf\\Views\\ChatView.xaml.cs",
+              "ToolTip": "D:\\Programming\\Works\\Dotnet\\ChatApp\\Presentation\\ChatApp.Wpf\\Views\\ChatView.xaml.cs",
+              "RelativeToolTip": "Presentation\\ChatApp.Wpf\\Views\\ChatView.xaml.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAADgvwoAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-02T00:11:13.052Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IHubService.cs",
+              "DocumentMoniker": "D:\\Programming\\Works\\Dotnet\\ChatApp\\Presentation\\ChatApp.Wpf\\Services\\IHubService.cs",
+              "RelativeDocumentMoniker": "Presentation\\ChatApp.Wpf\\Services\\IHubService.cs",
+              "ToolTip": "D:\\Programming\\Works\\Dotnet\\ChatApp\\Presentation\\ChatApp.Wpf\\Services\\IHubService.cs",
+              "RelativeToolTip": "Presentation\\ChatApp.Wpf\\Services\\IHubService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-02T00:15:15.111Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ChatViewModel.cs",
+              "DocumentMoniker": "D:\\Programming\\Works\\Dotnet\\ChatApp\\Presentation\\ChatApp.Wpf\\ViewModels\\ChatViewModel.cs",
+              "RelativeDocumentMoniker": "Presentation\\ChatApp.Wpf\\ViewModels\\ChatViewModel.cs",
+              "ToolTip": "D:\\Programming\\Works\\Dotnet\\ChatApp\\Presentation\\ChatApp.Wpf\\ViewModels\\ChatViewModel.cs",
+              "RelativeToolTip": "Presentation\\ChatApp.Wpf\\ViewModels\\ChatViewModel.cs",
+              "ViewState": "AQIAADoAAAAAAAAAAAAowEQAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-02T00:15:36.739Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedHeight": 166,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{ca8cc5c7-0231-406a-95cd-aa5ed6ac0190}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

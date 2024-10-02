@@ -1,0 +1,59 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                    mc:Ignorable="d">
+
+    <Style TargetType="Border" x:Key="MessageInputStyle">
+        <Style.Setters>
+            <Setter Property="Margin" Value="5"></Setter>
+            <Setter Property="CornerRadius" Value="18"></Setter>
+            <Setter Property="Background" Value="#070809"></Setter>
+        </Style.Setters>
+    </Style>
+
+    <Style TargetType="TextBox" x:Key="InputTextStyle">
+        <Style.Setters>
+            <Setter Property="Margin" Value="10 0"></Setter>
+            <Setter Property="Background" Value="Transparent"></Setter>
+            <Setter Property="Foreground" Value="#B2B2B2"></Setter>
+            <Setter Property="BorderThickness" Value="0"></Setter>
+            <Setter Property="FontSize" Value="15"></Setter>
+            <Setter Property="CaretBrush" Value="#00CCFF"></Setter>
+        </Style.Setters>
+    </Style>
+
+
+    <Style TargetType="Border" x:Key="InputBtnBorder">
+        <Style.Setters>
+            <Setter Property="HorizontalAlignment" Value="Center"></Setter>
+            <Setter Property="VerticalAlignment" Value="Center"></Setter>
+            <Setter Property="Background" Value="#131b29"></Setter>
+            <Setter Property="CornerRadius" Value="25"></Setter>
+            <Setter Property="Padding" Value="10"></Setter>
+        </Style.Setters>
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="#19507D"></Setter>
+                <Setter Property="Cursor" Value="Hand"></Setter>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style TargetType="Button" x:Key="InputSendBtnStyle">
+        <Style.Setters>
+            <Setter Property="Padding" Value="40"></Setter>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Style="{StaticResource InputBtnBorder}">
+                            <Path
+                                Data="M16.5707 0.0936078L0.599416 7.46632C-0.172228 7.82735 -0.208119 8.98646 0.54558 9.4045L3.79366 11.1717L13.4302 4.06499C13.5379 4.00798 13.6456 4.08399 13.6456 4.179L5.57024 12.3498C5.3549 12.5588 5.24723 12.8438 5.24723 13.1289V16.9102C5.24723 18.0123 6.59312 18.4114 7.13147 17.4803L9.0875 14.079L13.2508 16.3402C13.825 16.6632 14.5428 16.3212 14.7044 15.6371L17.9704 1.32873C18.1678 0.473645 17.3423 -0.267427 16.5707 0.0936078Z"
+                                Fill="white" />
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style.Setters>
+    </Style>
+</ResourceDictionary>

@@ -1,0 +1,36 @@
+<UserControl x:Class="ChatApp.Wpf.Controls.MessageInputControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:emoji="clr-namespace:Emoji.Wpf;assembly=Emoji.Wpf"
+             xmlns:viewModels="clr-namespace:ChatApp.Wpf.ViewModels"
+             xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             mc:Ignorable="d"
+             d:DesignHeight="300" d:DesignWidth="300"
+             d:DataContext="{d:DesignInstance Type = viewModels:MessageInputViewModel }">
+
+    <Border Style="{StaticResource MessageInputStyle}">
+        <Grid Margin="5 ">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Border Grid.Column="0" Style="{StaticResource InputBtnBorder}">
+                <Grid>
+                    <av:Path xmlns="http://www.w3.org/2000/svg"
+                             Data="M6.34783 7.971C6.34783 8.43667 6.52079 9.58089 7.17273 9.58089C7.81136 9.58089 7.98432 8.44998 7.99762 7.971C7.98432 7.50534 7.81136 6.36112 7.17273 6.36112C6.52079 6.36112 6.34783 7.50534 6.34783 7.971ZM12.8406 9.6075C13.4925 9.6075 13.6522 8.43667 13.6522 7.971C13.6522 7.50534 13.4925 6.34782 12.8406 6.33451C12.2019 6.34782 12.0423 7.50534 12.0423 7.971C12.0423 8.43667 12.2019 9.6075 12.8406 9.6075ZM13.9981 12.0157C12.7075 12.4946 11.377 12.8273 10.0067 12.8273C8.63626 12.8273 7.29247 12.4946 6.01521 12.0157C5.9886 12.0157 5.96199 12.0157 5.94868 12.0157C5.7092 12.0157 5.52293 12.2019 5.52293 12.4414C5.52293 12.5213 5.54954 12.6011 5.60276 12.6676C6.49418 14.2642 8.18389 15.262 10.0067 15.2887C11.8294 15.262 13.5058 14.2642 14.4105 12.6676C14.4505 12.6011 14.4771 12.5213 14.4771 12.4414C14.4771 12.2019 14.2908 12.0157 14.0646 12.0157C14.038 12.0157 14.0114 12.0157 13.9981 12.0157ZM10.0067 0.666656C15.1556 0.666656 19.3333 4.84437 19.3333 10.0066C19.3333 15.1556 15.1556 19.3333 10.0067 19.3333C4.84438 19.3333 0.666667 15.1556 0.666667 10.0066C0.666667 4.84437 4.84438 0.666656 10.0067 0.666656ZM10.0067 1.59799C14.65 1.59799 18.4153 5.36326 18.4153 10.0066C18.4153 14.65 14.65 18.4153 10.0067 18.4153C5.36327 18.4153 1.598 14.65 1.598 10.0066C1.598 5.36326 5.36327 1.59799 10.0067 1.59799Z"
+                             Fill="White" />
+                    <emoji:Picker Picked="Picker_OnPicked" Width="20" Height="20" Background="Transparent" Opacity="0"
+                                  VerticalAlignment="Center" HorizontalAlignment="Center" />
+                </Grid>
+            </Border>
+            <TextBox x:Name="MsgInput" Grid.Column="1" Style="{StaticResource InputTextStyle}" Text="{Binding Text}"
+                     GotFocus="Input_OnGotFocus" LostFocus="MsgInput_OnLostFocus" KeyDown="MsgInput_OnKeyDown">
+            </TextBox>
+            <Button Grid.Column="2" Style="{StaticResource InputSendBtnStyle}" Command="{Binding SendMessageCommand}"></Button>
+        </Grid>
+    </Border>
+</UserControl>

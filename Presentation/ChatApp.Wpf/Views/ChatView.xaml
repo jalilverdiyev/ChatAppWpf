@@ -1,0 +1,38 @@
+<UserControl x:Class="ChatApp.Wpf.Views.ChatView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:viewModels="clr-namespace:ChatApp.Wpf.ViewModels"
+             xmlns:controls="clr-namespace:ChatApp.Wpf.Controls"
+             mc:Ignorable="d"
+             d:DesignHeight="300" d:DesignWidth="300"
+             d:DataContext="{d:DesignInstance Type = viewModels:ChatViewModel}">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <controls:NavigationControl DataContext="{Binding NavigationVm}" />
+
+        <ScrollViewer Grid.Row="1" x:Name="MessagesScroll" Style="{StaticResource ScrollBarStyle}">
+            <ItemsControl ItemsSource="{Binding Messages}">
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <StackPanel Orientation="Vertical" />
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <controls:MessageControl Margin="0 0" />
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </ScrollViewer>
+
+        <controls:MessageInputControl Grid.Row="2" DataContext="{Binding MessageInputVm}"></controls:MessageInputControl>
+
+    </Grid>
+</UserControl>

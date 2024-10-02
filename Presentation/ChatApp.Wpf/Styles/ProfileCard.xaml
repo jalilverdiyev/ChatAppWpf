@@ -1,0 +1,71 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                    xmlns:viewModels="clr-namespace:ChatApp.Wpf.ViewModels"
+                    xmlns:converters="clr-namespace:ChatApp.Wpf.Converters"
+                    mc:Ignorable="d">
+
+    <Style BasedOn="{StaticResource {x:Type ToggleButton}}"
+           TargetType="RadioButton"
+           x:Key="ProfileCardStyle">
+
+        <Style.Resources>
+            <converters:UnreadCountToVisibilityConverter x:Key="UnreadCountToVisibilityConverter" />
+        </Style.Resources>
+
+        <Style.Setters>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="ToggleButton">
+                        <Border CornerRadius="5" BorderThickness="0" Background="{TemplateBinding Background}"
+                                Width="100" Height="100"
+                                d:DataContext="{d:DesignInstance Type = viewModels:ProfileViewModel }"
+                                x:Name="BtnBorder">
+                            <Grid>
+                                <Border CornerRadius="30" BorderBrush="#00DA7B" BorderThickness="4" Width="60"
+                                        Height="60">
+                                    <Image
+                                        Source="{Binding ProfilePhoto}"
+                                        Stretch="Fill"
+                                        Width="50" Height="50">
+                                        <Image.Clip>
+                                            <EllipseGeometry Center="25,25" RadiusX="25" RadiusY="25" />
+                                        </Image.Clip>
+                                    </Image>
+                                </Border>
+
+                                <Grid Width="20" Height="20"
+                                      Visibility="{Binding UnreadCount, Converter={StaticResource UnreadCountToVisibilityConverter}}"
+                                      HorizontalAlignment="Right" VerticalAlignment="Top">
+                                    <Path
+                                        Data="M1.9878 9.61166V9.74399V11.6288V11.6288C1.98779 11.7147 2.01165 11.7993 2.05715 11.8734C2.10267 11.9476 2.16824 12.0088 2.24723 12.05C2.32624 12.0913 2.4155 12.111 2.50541 12.1067C2.59533 12.1024 2.68212 12.0744 2.75652 12.026L2.75654 12.0259L6.41245 9.64547L6.44799 9.62233H6.4904L8.61751 9.62233L8.61767 9.62233M1.9878 9.61166L8.9294 9.74991C8.82625 9.75993 8.72223 9.76507 8.61767 9.76519V9.62233M1.9878 9.61166L1.85586 9.60155C0.897623 9.52807 0.142857 8.72706 0.142857 7.74991V2.74991C0.142857 1.72424 0.974328 0.892766 2 0.892766H11C12.0257 0.892766 12.8571 1.72424 12.8571 2.74991V7.74991C12.8571 8.77558 12.0257 9.60705 11 9.60705H8.9294V9.60638L8.91559 9.60772C8.81702 9.6173 8.7176 9.62221 8.61767 9.62233M1.9878 9.61166L8.61767 9.62233"
+                                        Fill="#FF0000" Stretch="Fill" />
+
+                                    <TextBlock Text="{Binding UnreadCount}" HorizontalAlignment="Center"
+                                               VerticalAlignment="Center" Foreground="#FFFFFF" FontSize="10"
+                                               FontWeight="Bold" />
+                                </Grid>
+
+                            </Grid>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+
+            <Setter Property="BorderThickness" Value="0"></Setter>
+            <Setter Property="Background" Value="#28293d" />
+        </Style.Setters>
+
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="#19507D" />
+                <Setter Property="Cursor" Value="Hand"></Setter>
+            </Trigger>
+            <Trigger Property="IsChecked" Value="True">
+                <Setter Property="Background" Value="#19507D" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+</ResourceDictionary>
